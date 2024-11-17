@@ -1,2 +1,2 @@
 def say_hello(name):
-    return f"Good, {name}!"
+    return f"Good 1, {name}!"
