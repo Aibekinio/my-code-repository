@@ -1,26 +1,22 @@
-name: Simple CI
+name: CI Example
 
 on:
   push:
-    branches:
-      - main  # Запускать при изменении ветки main
+    branches: [main]
 
 jobs:
-  test:
-    runs-on: ubuntu-latest  # Среда выполнения
+  build:
+    runs-on: ubuntu-latest
+
 
     steps:
-      # Шаг 1: Клонировать репозиторий
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    - name: Код кабылдау
+      uses: actions/checkout@v2
 
-      # Шаг 2: Установить Python
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.9
+    - name: Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
 
-      # Шаг 3: Запустить тесты
-      - name: Run tests
-        run: |
-          python -m unittest discover
+    - name: Код тексеру
+      run: echo"код тексерылды"
