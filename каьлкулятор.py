@@ -2,7 +2,7 @@ import tkinter as tk
 
 def click(event):
     text = event.widget.cget("text")
-    if text == "=":
+    if text = "=":
         try:
             result = eval(str(screen.get()))
             screen.set(result)
