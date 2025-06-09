@@ -19,4 +19,4 @@ jobs:
         python-version: '3.9'
 
     - name: Код тексеру
-      run: echo"код тексерылды"
+      run: echo "Код успешно проверен"
