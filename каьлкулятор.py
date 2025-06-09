@@ -16,7 +16,7 @@ def click(event):
 
 root = tk.Tk()
 root.title("Калькулятор")
-root.geometry("300x400")
+root.geometry("300x300")
 
 
 screen = tk.StringVar()
